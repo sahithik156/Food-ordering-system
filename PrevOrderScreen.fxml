@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackpa" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="946.0" prefWidth="2071.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ordermanagementsystem.PrevOrderScreenController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="1155.0" prefWidth="2121.0">
+         <children>
+            <ImageView fitHeight="1205.0" fitWidth="2159.0" layoutX="-38.0" layoutY="-87.0" opacity="0.8" pickOnBounds="true">
+               <image>
+                  <Image url="@../black-and-white-seamless-food-pattern-vector-13906182.jpg" />
+               </image>
+            </ImageView>
+            <TableView fx:id="prevO" layoutX="116.0" layoutY="19.0" opacity="0.8" prefHeight="1053.0" prefWidth="1297.0" style="-fx-background-color: grey;" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="116.0" AnchorPane.rightAnchor="708.0" AnchorPane.topAnchor="19.0">
+               <columns>
+                  <TableColumn fx:id="OrderNo" prefWidth="186.0" text="Order_No" />
+                  <TableColumn fx:id="Date" minWidth="0.0" prefWidth="215.0" text="Date" />
+                  <TableColumn fx:id="Time" prefWidth="314.0" text="Time" />
+                  <TableColumn fx:id="FoodItem" prefWidth="407.0" text="FoodItem" />
+                  <TableColumn fx:id="Qty" prefWidth="104.0" text="Qty" />
+               </columns>
+            </TableView>
+            <JFXButton buttonType="RAISED" layoutX="1668.0" layoutY="634.0" onMouseClicked="#ExitBtn" prefHeight="81.0" prefWidth="178.0" style="-fx-background-color: #28b5b5;" text="Exit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="1668.0" layoutY="401.0" onMouseClicked="#BackToMenuBtn" prefHeight="81.0" prefWidth="178.0" style="-fx-background-color: #28b5b5;" text="Back To Menu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

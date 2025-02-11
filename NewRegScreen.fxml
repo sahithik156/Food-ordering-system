@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="sp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="809.0" prefWidth="1132.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ordermanagementsystem.NewRegScreenController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="811.0" prefWidth="1169.0">
+         <children>
+            <ImageView fitHeight="1205.0" fitWidth="2044.0" layoutX="-17.0" layoutY="-63.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../newReg.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="Name" focusColor="#edeef2" labelFloat="true" layoutX="829.0" layoutY="369.0" prefHeight="39.0" prefWidth="328.0" promptText="Name" style="-fx-background-color: #FBEEAC;" unFocusColor="#fcf5f5">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="Email" focusColor="#eaebee" labelFloat="true" layoutX="829.0" layoutY="455.0" prefHeight="31.0" prefWidth="334.0" promptText="Email-ID" style="-fx-background-color: #FBEEAC;" unFocusColor="#f2efef">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="PhoneNum" focusColor="#eaebee" labelFloat="true" layoutX="829.0" layoutY="563.0" prefHeight="31.0" prefWidth="334.0" promptText="Phone_number" style="-fx-background-color: #FBEEAC;" unFocusColor="#f5ecec">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="Password" focusColor="#e5e7eb" labelFloat="true" layoutX="829.0" layoutY="671.0" prefHeight="31.0" prefWidth="334.0" promptText="Password" style="-fx-background-color: #FBEEAC;" unFocusColor="#f2e6e6">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton buttonType="RAISED" layoutX="853.0" layoutY="948.0" onMouseClicked="#Registration" prefHeight="39.0" prefWidth="157.0" style="-fx-background-color: #C19065;" text="Register">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="1035.0" layoutY="948.0" onMouseClicked="#Cancel" prefHeight="39.0" prefWidth="157.0" style="-fx-background-color: #C19065;" text="Cancel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="913.0" layoutY="1008.0" onMouseClicked="#Back_to_login" prefHeight="39.0" prefWidth="244.0" style="-fx-background-color: #C19065;" text="Back to Login">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
